@@ -43,15 +43,21 @@
   optionale Notizen.</p>
   <p><strong>Speicherung:</strong> Alle diese Daten werden lokal auf deinem Gerät gespeichert und — sofern von
   dir aktiviert — über deine <strong>private iCloud</strong> zwischen deinen Geräten synchronisiert. Der
-  Entwickler hat <strong>keinen Zugriff</strong> auf diese Daten und betreibt keinen eigenen Server, auf dem
-  sie gespeichert würden.</p>
+  Entwickler <strong>speichert deine persönlichen Daten auf keinem eigenen Server</strong>. Für die KI-Funktion
+  werden einzelne, pseudonymisierte Zahlenwerte über einen Vermittlungs-Server (Proxy) zu Anthropic durchgeleitet;
+  dieser Proxy <strong>speichert und protokolliert deine Daten nicht</strong> (reine Durchleitung, Details in
+  Abschnitt 4 a).</p>
 
   <h2>4. Weitergabe an Dritte</h2>
   <p><strong>a) Anthropic (KI-Coaching).</strong> Für die KI-gestützten Trainingsempfehlungen werden
   <strong>pseudonymisierte Zahlenwerte</strong> (z. B. Alter, Geschlecht, Größe, Erholungs- und
   Trainingskennzahlen) an die Claude-API von Anthropic übermittelt. Es werden <strong>kein Name, keine
-  Kontaktdaten und keine Apple-ID</strong> gesendet. Die Verarbeitung erfolgt über deinen eigenen
-  Anthropic-API-Schlüssel direkt von deinem Gerät aus. Es gelten die Datenschutzbestimmungen von Anthropic.</p>
+  Kontaktdaten und keine Apple-ID</strong> gesendet. Die Übertragung erfolgt verschlüsselt (HTTPS) über einen
+  vom Entwickler betriebenen <strong>Vermittlungs-Server (Proxy auf Basis von Cloudflare Workers)</strong>, der
+  die Anfrage ausschließlich zur Absicherung des Zugangs an Anthropic weiterleitet und <strong>deine Inhalte
+  nicht speichert oder protokolliert</strong>. Anthropic verarbeitet die Daten nur zur Erstellung der Empfehlung;
+  <strong>API-Eingaben werden von Anthropic standardmäßig nicht zum Training der KI-Modelle verwendet</strong>.
+  Es gelten die Datenschutzbestimmungen von Anthropic.</p>
   <p><strong>b) Strava (optional).</strong> Nur wenn du die Strava-Verbindung aktiv einrichtest, werden die von
   dir gewählten Trainingseinheiten (inkl. GPS-Strecke und Herzfrequenz) in dein eigenes Strava-Konto
   hochgeladen. Es gelten die Datenschutzbestimmungen von Strava.</p>
