@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Aus Suchmaschinen ausschließen: erreichbar per Link, aber nicht indexiert -->
   <meta name="robots" content="noindex, nofollow">
+  <!-- GENERIERT aus privacy-policy.md (Audit P6-F4/F5): die .md ist die EINE Quelle — bei
+       Änderungen die .md editieren und diese Datei neu erzeugen, nie hier von Hand. -->
   <title>Datenschutzerklärung — recovon</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -12,6 +14,7 @@
     h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.8rem; }
     .stand { color: #6b6b70; font-size: 0.9rem; }
     a { color: #0a84ff; }
+    ul { padding-left: 1.2rem; }
     @media (prefers-color-scheme: dark) {
       body { background: #000; color: #e5e5ea; } .stand { color: #9a9aa0; }
     }
@@ -19,101 +22,49 @@
 </head>
 <body>
   <h1>Datenschutzerklärung — recovon</h1>
-  <p class="stand"><strong>Stand:</strong> 26. Juni 2026</p>
-
+  <p class="stand"><strong>Stand:</strong> 7. August 2026</p>
   <h2>1. Verantwortlicher</h2>
-  <p>Henry Kobs<br>
-  E-Mail: <a href="mailto:recovonapp@proton.me">recovonapp@proton.me</a></p>
-  <p>(Verantwortlicher im Sinne der DSGVO für die Verarbeitung deiner Daten in der App recovon.)</p>
-
+  <p>Henry Kobs E-Mail: <a href="mailto:recovonapp@proton.me">recovonapp@proton.me</a></p>
+  <p><em>(Verantwortlicher im Sinne der DSGVO für die Verarbeitung deiner Daten in der App recovon.)</em></p>
   <h2>2. Grundsatz</h2>
-  <p>recovon ist eine persönliche Trainings- und Gesundheits-App. Deine Daten bleiben grundsätzlich
-  <strong>auf deinem Gerät</strong> und in <strong>deiner eigenen iCloud</strong>. Es gibt
-  <strong>keine Nutzerkonten</strong>, <strong>keine Werbung</strong>, <strong>kein Tracking</strong> und
-  <strong>keinen Verkauf von Daten</strong>. Daten werden nur dann an Dritte übermittelt, wenn es für eine
-  von dir genutzte Funktion nötig ist (siehe Abschnitt 4).</p>
-
+  <p>recovon ist eine persönliche Trainings- und Gesundheits-App. Deine Daten bleiben grundsätzlich <strong>auf deinem Gerät</strong> und in <strong>deiner eigenen iCloud</strong>. Es gibt <strong>keine Nutzerkonten</strong>, <strong>keine Werbung</strong>, <strong>kein Tracking</strong> und <strong>keinen Verkauf von Daten</strong>. Daten werden nur dann an Dritte übermittelt, wenn es für eine von dir genutzte Funktion nötig ist (siehe Abschnitt 4).</p>
   <h2>3. Welche Daten verarbeitet werden</h2>
-  <p><strong>Aus Apple Health (nur lesend, mit deiner Erlaubnis):</strong>
-  Herzfrequenzvariabilität (HRV), Ruhepuls, Atemfrequenz, Hauttemperatur, Schlaf, Schritte,
-  Trainingseinheiten, Gewicht, Körperfett, Bauchumfang.</p>
-  <p><strong>In Apple Health (schreibend, mit deiner Erlaubnis):</strong>
-  Deine in der App erfassten Messungen sowie auf der Apple Watch aufgezeichnete Trainingseinheiten.</p>
-  <p><strong>Von dir eingegeben:</strong> Alter, Geschlecht, Größe, Trainingsziele und -werte (z. B. FTP),
-  optionale Notizen.</p>
-  <p><strong>Standort (nur bei aktivierten „Umwelt-Hinweisen"):</strong> Wenn du die Funktion „Umwelt-Hinweise"
-  einschaltest, wird dein <strong>ungefährer Standort</strong> verwendet, um Wetter, Hitze, Luftqualität und UV
-  für dein Outdoor-Training zu bestimmen. Der Standort wird dabei <strong>auf etwa 1&nbsp;km gerundet, bevor er
-  das Gerät verlässt</strong>, ausschließlich zum Wetterabruf genutzt und <strong>nicht gespeichert</strong>
-  (siehe Abschnitt 4&nbsp;d). Erteilst du keine Standort-Berechtigung, nutzt die App ersatzweise den (ebenfalls
-  gerundeten) Startpunkt deines letzten Outdoor-Trainings. Die Funktion lässt sich in den App-Einstellungen
-  jederzeit abschalten.</p>
-  <p><strong>GPS-Strecken (nur bei Outdoor-Aufzeichnung):</strong> Startest du eine Outdoor-Einheit mit
-  Live-Aufzeichnung (iPhone oder Apple Watch), zeichnet die App deine <strong>präzise GPS-Strecke</strong> auf,
-  um dir Route, Distanz und Karte anzuzeigen. Die Strecke wird <strong>ausschließlich lokal</strong> verarbeitet
-  und in <strong>Apple Health</strong> auf deinem Gerät gespeichert — sie wird von der App <strong>an keinen
-  Server übertragen</strong> (Ausnahme: du exportierst sie selbst aktiv, z.&nbsp;B. als GPX-Datei oder an Strava).
-  Ohne Standort-Berechtigung funktioniert die Aufzeichnung weiter, nur ohne Karte.</p>
-  <p><strong>Speicherung:</strong> Alle diese Daten werden lokal auf deinem Gerät gespeichert und — sofern von
-  dir aktiviert — über deine <strong>private iCloud</strong> zwischen deinen Geräten synchronisiert. Der
-  Entwickler <strong>speichert deine persönlichen Daten auf keinem eigenen Server</strong>. Für die KI-Funktion
-  werden einzelne, pseudonymisierte Zahlenwerte über einen Vermittlungs-Server (Proxy) zu Anthropic durchgeleitet;
-  dieser Proxy <strong>speichert und protokolliert deine Daten nicht</strong> (reine Durchleitung, Details in
-  Abschnitt 4 a).</p>
-
+  <p><strong>Aus Apple Health (nur lesend, jeweils mit deiner Erlaubnis — du entscheidest im Health-Freigabedialog für jeden Typ einzeln):</strong></p>
+  <ul>
+    <li><em>Herz &amp; Kreislauf:</em> Herzfrequenz, Ruhepuls, Herzfrequenzvariabilität (HRV), Herzfrequenz-Erholung, Gehpuls, Blutdruck, Meldungen zu unregelmäßigem/hohem Herzrhythmus, Sauerstoffsättigung, Atemfrequenz, VO₂max</li>
+    <li><em>Körper:</em> Gewicht, Körperfett, Magermasse, Bauchumfang, Größe, Hauttemperatur/Handgelenkstemperatur, Körpertemperatur</li>
+    <li><em>Schlaf &amp; Erholung:</em> Schlafanalyse, Achtsamkeits-Minuten, Tageslicht-Zeit, mentales Wohlbefinden (ab iOS 18, optional)</li>
+    <li><em>Aktivität &amp; Training:</em> Trainingseinheiten samt Herzfrequenz-Verlauf und GPS-Route, Schritte, Trainingsminuten, Aktiv-/Grundumsatz-Energie, Geh-, Lauf-, Rad-, Schwimm-Distanzen, Schwimmzüge, Rad-/Laufleistung (Watt), Laufdynamik (Bodenkontakt, vertikale Bewegung, Schrittlänge, Tempo), Gehtempo, Gehsicherheit, 6-Minuten-Gehtest, Treppengeschwindigkeit</li>
+    <li><em>Stoffwechsel &amp; Ernährung:</em> Blutzucker, aufgenommene Energie, Eiweiß, Kohlenhydrate, Fett, Ballaststoffe, Zucker, Natrium, Wasser, Koffein, alkoholische Getränke</li>
+    <li><em>Zyklus:</em> Menstruationsdaten (nur, wenn du die Zyklus-Funktion nutzt)</li>
+    <li><em>Profil:</em> biologisches Geschlecht, Geburtsdatum</li>
+  </ul>
+  <p>Die App fordert nur an, was eine Funktion tatsächlich rechnet; jeder Typ lässt sich in iOS unter „Datenschutz → Health" einzeln entziehen. Was du nicht freigibst, ersetzt die App durch ehrliche Leerzustände — sie rät nicht.</p>
+  <p><strong>In Apple Health (schreibend, mit deiner Erlaubnis):</strong> Von der App aufgezeichnete Trainingseinheiten (inkl. Herzfrequenz-Verlauf, Energie, Distanz und GPS-Route), deine in der App erfassten Messungen (Gewicht, Körperfett, Bauchumfang) und HRV-Messwerte verbundener Geräte.</p>
+  <p><strong>Aus deinem Oura-Ring (optional, nur wenn du die Verbindung aktiv einrichtest):</strong> Schlafphasen (inkl. detailliertem Schlafverlauf), Schlafdauer und -effizienz, nächtliche Herzfrequenz und HRV sowie Temperaturabweichung — abgerufen aus deinem eigenen Oura-Konto (Details in Abschnitt 4 e).</p>
+  <p><strong>Von dir eingegeben:</strong> Alter, Geschlecht, Größe, Trainingsziele und -werte (z. B. FTP), optionale Notizen.</p>
+  <p><strong>Standort (nur bei aktivierten „Umwelt-Hinweisen"):</strong> Wenn du die Funktion „Umwelt-Hinweise" einschaltest, wird dein <strong>ungefährer Standort</strong> verwendet, um Wetter, Hitze, Luftqualität und UV für dein Outdoor-Training zu bestimmen. Der Standort wird dabei <strong>auf etwa 1 km gerundet, bevor er das Gerät verlässt</strong>, ausschließlich zum Wetterabruf genutzt und <strong>nicht gespeichert</strong> (siehe Abschnitt 4 d). Erteilst du keine Standort-Berechtigung, nutzt die App ersatzweise den (ebenfalls gerundeten) Startpunkt deines letzten Outdoor-Trainings. Die Funktion lässt sich in den App-Einstellungen jederzeit abschalten.</p>
+  <p><strong>GPS-Strecken (nur bei Outdoor-Aufzeichnung):</strong> Startest du eine Outdoor-Einheit mit Live-Aufzeichnung (iPhone oder Apple Watch), zeichnet die App deine <strong>präzise GPS-Strecke</strong> auf, um dir Route, Distanz und Karte anzuzeigen. Die Strecke wird <strong>ausschließlich lokal</strong> verarbeitet und in <strong>Apple Health</strong> auf deinem Gerät gespeichert — sie wird von der App <strong>an keinen Server übertragen</strong> (Ausnahme: du exportierst sie selbst aktiv, z. B. als GPX-Datei oder an Strava). Ohne Standort-Berechtigung funktioniert die Aufzeichnung weiter, nur ohne Karte.</p>
+  <p><strong>Speicherung:</strong> Alle diese Daten werden lokal auf deinem Gerät gespeichert und — sofern von dir aktiviert — über deine <strong>private iCloud</strong> zwischen deinen Geräten synchronisiert. Der Entwickler <strong>speichert deine persönlichen Daten auf keinem eigenen Server</strong>. Für die KI-Funktion werden Gesundheits- und Trainingsdaten (Details und vollständige Aufzählung in Abschnitt 4 a) über einen Vermittlungs-Server (Proxy) zu Anthropic durchgeleitet; dieser Proxy <strong>speichert und protokolliert deine Inhalte nicht</strong> (reine Durchleitung, nur anonyme Zugriffszähler).</p>
   <h2>4. Weitergabe an Dritte</h2>
-  <p><strong>a) Anthropic (KI-Coaching).</strong> Für die KI-gestützten Trainingsempfehlungen werden
-  <strong>pseudonymisierte Zahlenwerte</strong> (z. B. Alter, Geschlecht, Größe, Erholungs- und
-  Trainingskennzahlen) an die Claude-API von Anthropic übermittelt. Es werden <strong>kein Name, keine
-  Kontaktdaten und keine Apple-ID</strong> gesendet. Die Übertragung erfolgt verschlüsselt (HTTPS) über einen
-  vom Entwickler betriebenen <strong>Vermittlungs-Server (Proxy auf Basis von Cloudflare Workers)</strong>, der
-  die Anfrage ausschließlich zur Absicherung des Zugangs an Anthropic weiterleitet und <strong>deine Inhalte
-  nicht speichert oder protokolliert</strong>. Anthropic verarbeitet die Daten nur zur Erstellung der Empfehlung;
-  <strong>API-Eingaben werden von Anthropic standardmäßig nicht zum Training der KI-Modelle verwendet</strong>.
-  Es gelten die Datenschutzbestimmungen von Anthropic.</p>
-  <p><strong>b) Strava (optional).</strong> Nur wenn du die Strava-Verbindung aktiv einrichtest, werden die von
-  dir gewählten Trainingseinheiten (inkl. GPS-Strecke und Herzfrequenz) in dein eigenes Strava-Konto
-  hochgeladen. Es gelten die Datenschutzbestimmungen von Strava.</p>
-  <p><strong>c) Apple iCloud.</strong> Die Synchronisation läuft über deine private iCloud; es gelten die
-  Datenschutzbestimmungen von Apple.</p>
-  <p><strong>d) Open-Meteo (Wetter &amp; Luftqualität, optional).</strong> Nur wenn du die „Umwelt-Hinweise"
-  nutzt, werden deine <strong>auf etwa 1&nbsp;km gerundeten</strong> Koordinaten verschlüsselt (HTTPS) an den
-  Wetterdienst <strong>Open-Meteo</strong> (open-meteo.com) übermittelt, um Temperatur, Luftqualität und UV
-  abzurufen. Es werden <strong>kein Name, keine Apple-ID und keine genaue Position</strong> gesendet; die
-  gerundeten Koordinaten werden <strong>nicht mit deiner Identität verknüpft</strong> und dienen ausschließlich
-  der Wetterabfrage. Open-Meteo benötigt kein Nutzerkonto. Es gelten die Datenschutzbestimmungen von
-  Open-Meteo.</p>
-
+  <p><strong>a) Anthropic (KI-Coaching).</strong> Für die KI-gestützten Trainingsempfehlungen werden Gesundheits- und Trainingsdaten an die Claude-API von Anthropic übermittelt — je nach genutzter Funktion umfasst das: Alter, Geschlecht, Größe, BMI, Erholungs- und Trainingskennzahlen (HRV-, Ruhepuls-, Schlaf- und Belastungswerte), Blutdruck-Kategorie, Blutzucker-Kennzahlen, errechnete Risiko-Scores (z. B. SCORE2), Zyklusphase (falls die Zyklus-Funktion aktiv ist), Schwangerschafts-Status (falls hinterlegt), von dir gemeldete Krankheiten/Verletzungen samt deiner <strong>Freitext-Notizen</strong> sowie deine Trainingsziele. Es werden <strong>kein Name, keine Kontaktdaten und keine Apple-ID</strong> gesendet — die Daten sind aber ihrem Inhalt nach Gesundheitsdaten und teils sensibel; sende in Freitextfelder nur, was die KI wissen soll. Die Übertragung erfolgt verschlüsselt (HTTPS) über einen vom Entwickler betriebenen <strong>Vermittlungs-Server (Proxy auf Basis von Cloudflare Workers)</strong>, der die Anfrage zur Absicherung des Zugangs an Anthropic weiterleitet und <strong>deine Inhalte nicht speichert oder protokolliert</strong> (nur anonyme Zähler für Zugriffslimits). Zu diesen Limits gehört dein <strong>Zugangscode</strong>: Er macht Anfragen desselben Codes für den Betreiber <strong>als zusammengehörig erkennbar</strong> (nicht aber deren Inhalt — der wird nicht gespeichert). Anthropic verarbeitet die Daten nur zur Erstellung der Empfehlung; <strong>API-Eingaben werden von Anthropic standardmäßig nicht zum Training der KI-Modelle verwendet</strong>. Es gelten die Datenschutzbestimmungen von Anthropic (anthropic.com/privacy). Ohne KI-Funktion (kein Zugangscode/API-Schlüssel) findet keine dieser Übermittlungen statt.</p>
+  <p><strong>b) Strava (optional).</strong> Nur wenn du die Strava-Verbindung aktiv einrichtest, werden Trainingseinheiten (inkl. GPS-Strecke und Herzfrequenz) in dein eigenes Strava-Konto hochgeladen. <strong>Nach dem Verbinden lädt die App neue Einheiten automatisch hoch</strong> — genau dafür verbindet man Strava; der Auto-Upload lässt sich in den Einstellungen (Integrationen) jederzeit abschalten, danach lädt nur noch der manuelle Knopf. Es gelten die Datenschutzbestimmungen von Strava.</p>
+  <p><strong>c) Apple iCloud.</strong> Die Synchronisation läuft über deine private iCloud; es gelten die Datenschutzbestimmungen von Apple.</p>
+  <p><strong>d) Open-Meteo (Wetter &amp; Luftqualität, optional).</strong> Nur wenn du die „Umwelt-Hinweise" nutzt, werden deine <strong>auf etwa 1 km gerundeten</strong> Koordinaten verschlüsselt (HTTPS) an den Wetterdienst <strong>Open-Meteo</strong> (open-meteo.com) übermittelt, um Temperatur, Luftqualität und UV abzurufen. Es werden <strong>kein Name, keine Apple-ID und keine genaue Position</strong> gesendet; die gerundeten Koordinaten werden <strong>nicht mit deiner Identität verknüpft</strong> und dienen ausschließlich der Wetterabfrage. Open-Meteo benötigt kein Nutzerkonto. Es gelten die Datenschutzbestimmungen von Open-Meteo.</p>
+  <p><strong>e) Oura (optional).</strong> Nur wenn du deinen Oura-Ring aktiv verbindest (OAuth-Anmeldung bei Oura), ruft die App aus deinem eigenen Oura-Konto Schlaf- und Erholungsdaten ab (Schlafphasen, nächtliche Herzfrequenz/HRV, Temperaturabweichung). Die Verbindung läuft verschlüsselt (HTTPS) direkt zwischen deinem Gerät und Oura; die App sendet dabei keine Daten AN Oura, sie liest nur. Die Zugangsberechtigung kannst du jederzeit in den App-Einstellungen trennen (und zusätzlich im Oura-Konto widerrufen). Es gelten die Datenschutzbestimmungen von Oura (ouraring.com/privacy-policy).</p>
+  <p><strong>f) Übermittlung in Drittländer (insbesondere USA).</strong> Anthropic (KI), Cloudflare (Vermittlungs-Server) und Strava sind US-Unternehmen — bei Nutzung der jeweiligen Funktion werden Daten in die <strong>USA</strong> übermittelt (Drittland im Sinne der Art. 44 ff. DSGVO). Die Übermittlung stützt sich auf deine <strong>ausdrückliche Einwilligung in die konkrete Funktion</strong> (Art. 49 Abs. 1 lit. a DSGVO) sowie — soweit die Anbieter zertifiziert sind — auf den <strong>Angemessenheitsbeschluss zum EU-U.S. Data Privacy Framework</strong> bzw. auf <strong>EU-Standardvertragsklauseln</strong> der Anbieter. Ohne die jeweilige Funktion (kein KI-Zugang, kein Strava) findet keine Drittland-Übermittlung statt; Oura (Finnland) und Open-Meteo verarbeiten in der EU bzw. erhalten keine personenbezogenen Daten außer den gerundeten Koordinaten.</p>
   <h2>5. Rechtsgrundlage</h2>
-  <p>Die Verarbeitung erfolgt auf Grundlage deiner <strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO).
-  Da es sich teils um <strong>Gesundheitsdaten</strong> (besondere Kategorie) handelt, stützt sich die
-  Verarbeitung zusätzlich auf deine <strong>ausdrückliche Einwilligung</strong> (Art. 9 Abs. 2 lit. a DSGVO).
-  Du erteilst diese Einwilligung, indem du der App den Zugriff auf Apple Health bzw. die jeweilige Funktion
-  (z. B. Standort für die Umwelt-Hinweise) erlaubst. Du kannst sie jederzeit widerrufen — z. B. in den
-  iOS-Einstellungen unter „Datenschutz → Health" bzw. „Datenschutz → Ortungsdienste" oder direkt in den
-  App-Einstellungen.</p>
-
+  <p>Die Verarbeitung erfolgt auf Grundlage deiner <strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO). Da es sich teils um <strong>Gesundheitsdaten</strong> (besondere Kategorie) handelt, stützt sich die Verarbeitung zusätzlich auf deine <strong>ausdrückliche Einwilligung</strong> (Art. 9 Abs. 2 lit. a DSGVO). Du erteilst diese Einwilligung, indem du der App den Zugriff auf Apple Health bzw. die jeweilige Funktion (z. B. Standort für die Umwelt-Hinweise) erlaubst. Du kannst sie jederzeit widerrufen — z. B. in den iOS-Einstellungen unter „Datenschutz → Health" bzw. „Datenschutz → Ortungsdienste" oder direkt in den App-Einstellungen.</p>
   <h2>6. Speicherdauer</h2>
-  <p>Lokal und in deiner iCloud gespeicherte Daten bleiben erhalten, bis du sie in der App löschst oder die App
-  deinstallierst. Für Daten bei Anthropic und Strava gelten die jeweiligen Aufbewahrungsfristen dieser Anbieter.</p>
-
+  <p>Lokal und in deiner iCloud gespeicherte Daten bleiben erhalten, bis du sie in der App löschst. Der Knopf „Alles löschen &amp; neu starten" (Einstellungen → Daten &amp; Sicherung) entfernt sie von diesem Gerät <strong>und aus deiner iCloud</strong>; von der App in Apple Health geschriebene Einheiten löschst du in der Health-App. Für Daten bei Anthropic, Strava und Oura gelten die jeweiligen Aufbewahrungsfristen dieser Anbieter.</p>
   <h2>7. Deine Rechte</h2>
-  <p>Du hast nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-  Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu
-  beschweren. Da die Daten lokal bei dir liegen, kannst du die meisten dieser Rechte direkt auf dem Gerät
-  ausüben (Daten einsehen, ändern, löschen).</p>
-
+  <p>Du hast nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Da die Daten lokal bei dir liegen, kannst du die meisten dieser Rechte direkt auf dem Gerät ausüben (Daten einsehen, ändern, löschen).</p>
   <h2>8. Datensicherheit</h2>
-  <p>Die Übertragung an Anthropic und Strava erfolgt verschlüsselt über HTTPS. Auf Wunsch lassen sich die
-  Gesundheitsdaten in der App zusätzlich per Face ID / Code schützen.</p>
-
+  <p>Die Übertragung an Anthropic, Strava, Oura und Open-Meteo erfolgt verschlüsselt über HTTPS. Auf Wunsch lassen sich die Gesundheitsdaten in der App zusätzlich per Face ID / Code schützen.</p>
   <h2>9. Kinder</h2>
   <p>Die App richtet sich nicht an Kinder unter 16 Jahren.</p>
-
   <h2>10. Änderungen</h2>
-  <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App ändern. Die jeweils
-  aktuelle Fassung ist unter dieser Adresse abrufbar.</p>
-
+  <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App ändern. Die jeweils aktuelle Fassung ist unter dieser Adresse abrufbar.</p>
   <h2>11. Kontakt</h2>
   <p>Bei Fragen zum Datenschutz: <a href="mailto:recovonapp@proton.me">recovonapp@proton.me</a></p>
 </body>
